@@ -52,30 +52,48 @@
             <p class="section-kicker">BEFORE THE DIALOGUE</p>
             <p class="potential-brand"><small>DASS</small><strong>Potential Compass</strong><span>ポテンシャル・コンパス</span></p>
             <h2 id="potential-precheck-title">面談前に、<br />その子の強みを整理する。</h2>
-            <p>Potential Compassは、72問から、今表れやすい強み、6つの力、力を発揮しやすい条件を整理する事前診断です。診断結果を先に共有いただくことで、限られた45分を一般的な聞き取りではなく、その子の具体的な進路や学び方の話に使えます。</p>
-            <a class="button potential-button" href="https://dass-potential-compass.est3141.chatgpt.site" target="_blank" rel="noreferrer">
+            <p>Potential Compassは、72問から、今表れやすい強み、6つの力、力を発揮しやすい条件を整理する事前診断です。無料初回対話のお申し込みには、事前にPotential Compassの受検が必要です。診断結果を先に共有いただくことで、限られた45分を一般的な聞き取りではなく、その子の具体的な進路や学び方の話に使えます。</p>
+            <a class="button potential-button" href="../potential-compass/index.html">
               Potential Compassに回答する <span>↗</span>
             </a>
             <small class="potential-note">第七試作版 v0.7｜合否や能力を確定する診断ではありません。</small>
           </div>
           <ol class="potential-flow">
-            <li><span>01</span><div><strong>本人または保護者が回答</strong><p>普段の姿を思い浮かべ、72問へ直感的に回答してください。</p></div></li>
-            <li><span>02</span><div><strong>診断結果をコピー</strong><p>結果画面の「診断結果をコピー」を押してください。</p></div></li>
-            <li><span>03</span><div><strong>申込フォームへ貼り付ける</strong><p>コピーした結果を、下の申込フォームのメッセージ欄へ貼り付けてください。</p></div></li>
+            <li><span>01</span><div><strong>Potential Compassを受検</strong><p>本人または保護者が、普段の姿を思い浮かべながら72問へ回答します。</p></div></li>
+            <li><span>02</span><div><strong>診断結果を確認</strong><p>すべての回答が完了すると、受検IDが自動で発行されます。</p></div></li>
+            <li><span>03</span><div><strong>申込フォームが解放</strong><p>結果画面から初回対話ページへ進むと、申込フォームへ進めるようになります。</p></div></li>
           </ol>
         </section>
 
-        <div class="dialogue-application">
+        <div class="dialogue-application" data-potential-gate>
           <p class="section-kicker">APPLICATION</p>
-          <h2>初回対話を申し込む</h2>
-          <p>
-            下のボタンからDASS公式の相談申込フォームへお進みください。
-            メッセージ欄の冒頭に<strong>「DASS Career Designの初回対話希望」</strong>と記入し、その下へPotential Compassの診断結果を貼り付けてください。
-          </p>
-          <a class="button button-primary dialogue-submit" href="https://pro.form-mailer.jp/fms/42119f23310146">
-            申込フォームへ進む <span>→</span>
-          </a>
-          <small>相談希望日時は、候補を複数ご記入ください。すでにお申込み済みの場合は、面談時に診断結果の画面をご提示ください。</small>
+
+          <div class="potential-gate-locked" data-potential-locked>
+            <div class="potential-gate-status is-locked">Potential Compass 未受検</div>
+            <h2>まずPotential Compassを<br />受けてください</h2>
+            <p>
+              無料初回対話のお申し込みには、事前にPotential Compassの受検が必要です。
+              72問への回答が完了すると、このページの申込フォームが解放されます。
+            </p>
+            <a class="button button-primary dialogue-submit" href="../potential-compass/index.html">
+              Potential Compassを受ける <span>→</span>
+            </a>
+            <small>すでに受検済みの場合は、Potential Compassの結果画面にある「無料初回対話を申し込む」からこのページを開いてください。</small>
+          </div>
+
+          <div class="potential-gate-unlocked" data-potential-unlocked hidden>
+            <div class="potential-gate-status is-unlocked">Potential Compass 受検済み ✓</div>
+            <h2>初回対話を申し込む</h2>
+            <p class="potential-completion-meta">受検ID：<strong data-potential-id>—</strong><br><span data-potential-date></span></p>
+            <p>
+              下のボタンからDASS公式の相談申込フォームへお進みください。
+              メッセージ欄の冒頭に<strong>「DASS Career Designの初回対話希望」</strong>と記入し、その下へPotential Compassの診断結果を貼り付けてください。
+            </p>
+            <a class="button button-primary dialogue-submit" href="https://pro.form-mailer.jp/fms/42119f23310146" target="_blank" rel="noopener noreferrer">
+              申込フォームへ進む <span>→</span>
+            </a>
+            <small>相談希望日時は、候補を複数ご記入ください。Potential Compassの結果画面は別タブに残しておくと、診断結果をコピーしやすくなります。</small>
+          </div>
         </div>
       </section>
     </main>

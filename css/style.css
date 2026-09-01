@@ -456,3 +456,12 @@ footer { padding: 50px 5vw 28px; display: grid; grid-template-columns: auto 1fr 
 }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+/* Potential Compass completion gate */
+.potential-gate-status { display: inline-flex; align-items: center; justify-content: center; min-height: 34px; margin-bottom: 8px; padding: 0 14px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: .04em; }
+.potential-gate-status.is-locked { background: #f1e7df; color: var(--accent); }
+.potential-gate-status.is-unlocked { background: #e5eee9; color: #315f4b; }
+.potential-completion-meta { margin: 0 auto 22px !important; padding: 14px 16px; background: #f6f3ed; color: var(--ink) !important; font-size: 13px; line-height: 1.7 !important; }
+.potential-completion-meta strong { letter-spacing: .04em; }
+.potential-completion-meta span { color: var(--muted); font-size: 11px; }
+[hidden] { display: none !important; }
