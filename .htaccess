@@ -1,0 +1,7 @@
+# DASS cache policy: revalidate cached files on every request.
+# Unchanged files can still be reused via conditional requests (304).
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:html?|css|js|mjs|json|xml|webmanifest|png|jpe?g|gif|webp|avif|svg|ico|woff2?|ttf|otf|eot|pdf)$">
+    Header always set Cache-Control "no-cache, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
